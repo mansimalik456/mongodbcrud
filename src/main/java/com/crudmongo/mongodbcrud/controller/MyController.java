@@ -1,6 +1,5 @@
 package com.crudmongo.mongodbcrud.controller;
 
-import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -17,13 +16,8 @@ import com.crudmongo.mongodbcrud.models.Student;
 import com.crudmongo.mongodbcrud.repo.Studentrepo;
 
 @RestController
-//@RequestMapping("/student")
+@RequestMapping("/student")
 public class MyController {
-	
-	@RequestMapping("/")
-	public String home() {
-		return "index";
-	}
 	
 	@Autowired
 	private Studentrepo studentRepository;
